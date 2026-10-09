@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DJ Starkey - Lions Den - for all your events</title>
+
+    <meta
+        name="description"
+        content="DJ Starkey is a UK-born mobile DJ based in Tilburg, providing professional DJ entertainment for weddings, birthdays, private parties, corporate events and celebrations."
+    >
+
+    <meta
+        name="keywords"
+        content="DJ Tilburg, mobile DJ Tilburg, DJ wedding Tilburg, wedding DJ Netherlands, party DJ Tilburg, DJ Starkey, EDM DJ Tilburg, House DJ Tilburg, Techno DJ Tilburg"
+    >
+
+    <meta
+        name="author"
+        content="DJ Starkey"
+    >
+
+    <!-- FAVICON -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="Images/logo/logo-transparent.png"
+    >
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- WEBSITE CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- =========================================================
+         REVIEWS SECTION — PREMIUM LIONS DEN STYLE
+    ========================================================== -->
+
+    <style>
+
+        .reviews {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(
+                    circle at 50% 0%,
+                    rgba(212,175,55,.07),
+                    transparent 45%
+                ),
+                #080808;
+        }
+
+        .reviews::before {
+            content: "";
+            position: absolute;
+            width: 700px;
+            height: 320px;
+            left: 50%;
+            top: -170px;
+            transform: translateX(-50%);
+            background:
+                radial-gradient(
+                    ellipse,
+                    rgba(212,175,55,.08),
+                    transparent 70%
+                );
+            filter: blur(25px);
+            pointer-events: none;
+        }
+
+        .reviews-inner {
+            position: relative;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .reviews-intro {
+            max-width: 720px;
+            margin: 0 auto 45px;
+            text-align: center;
+            color: rgba(255,255,255,.68);
+            line-height: 1.8;
+        }
+
+        .reviews-rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 35px;
+        }
+
+        .reviews-stars {
+            color: var(--gold);
+            letter-spacing: 3px;
+            font-size: 18px;
+            text-shadow:
+                0 0 14px rgba(212,175,55,.25);
+        }
+
+        .reviews-rating-text {
+            color: rgba(255,255,255,.58);
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .reviews-slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reviews-track {
+            display: flex;
+            transition:
+                transform .65s cubic-bezier(.22,1,.36,1);
+        }
+
+        .review-slide {
+            min-width: 100%;
+            padding: 8px 70px 20px;
+            box-sizing: border-box;
+        }
+
+        .review-card {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 42px 48px;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(22,22,22,.96),
+                    rgba(8,8,8,.98)
+                );
+            border: 1px solid rgba(212,175,55,.22);
+            border-radius: 14px;
+            box-shadow:
+                0 24px 70px rgba(0,0,0,.35),
+                inset 0 1px 0 rgba(255,255,255,.025);
+        }
+
+        .review-card::before {
+            content: "“";
+            position: absolute;
+            top: 10px;
+            left: 28px;
+            color: rgba(212,175,55,.16);
+            font-family: Georgia, serif;
+            font-size: 92px;
+            line-height: 1;
+        }
+
+        .review-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 22px;
+        }
+
+        .reviewer-name {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: .5px;
+        }
+
+        .review-stars {
+            color: var(--gold);
+            font-size: 15px;
+            letter-spacing: 2px;
+            white-space: nowrap;
+        }
+
+        .review-text {
+            position: relative;
+            margin: 0;
+            color: rgba(255,255,255,.84);
+            font-size: 15px;
+            line-height: 1.85;
+        }
+
+        .review-google-note {
+            margin-top: 18px;
+            color: rgba(255,255,255,.38);
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .review-response {
+            margin-top: 30px;
+            padding: 22px 24px;
+            border-left: 2px solid var(--gold);
+            background: rgba(212,175,55,.045);
+        }
+
+        .review-response-label {
+            display: block;
+            margin-bottom: 9px;
+            color: var(--gold);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .review-response p {
+            margin: 0;
+            color: rgba(255,255,255,.66);
+            font-size: 13px;
+            line-height: 1.75;
+        }
+
+        .reviews-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .review-arrow {
+            width: 44px;
+            height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(212,175,55,.3);
+            border-radius: 50%;
+            background: rgba(255,255,255,.025);
+            color: var(--gold);
+            cursor: pointer;
+            transition:
+                transform .3s ease,
+                background .3s ease,
+                border-color .3s ease,
+                box-shadow .3s ease;
+        }
+
+        .review-arrow:hover {
+            transform: translateY(-3px);
+            background: rgba(212,175,55,.1);
+            border-color: rgba(212,175,55,.75);
+            box-shadow:
+                0 8px 25px rgba(212,175,55,.12);
+        }
+
+        .review-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+        }
+
+        .review-dot {
+            width: 6px;
+            height: 6px;
+            padding: 0;
+            border: 0;
+            border-radius: 50%;
+            background: rgba(255,255,255,.22);
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        .review-dot.active {
+            width: 24px;
+            border-radius: 10px;
+            background: var(--gold);
+            box-shadow:
+                0 0 10px rgba(212,175,55,.25);
+        }
+
+        .reviews-google-link {
+            display: flex;
+            justify-content: center;
+            margin-top: 32px;
+        }
+
+        .reviews-google-link a {
+            color: var(--gold);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-decoration: none;
+            border-bottom:
+                1px solid rgba(212,175,55,.35);
+            padding-bottom: 5px;
+            transition:
+                border-color .3s ease,
+                text-shadow .3s ease;
+        }
+
+        .reviews-google-link a:hover {
+            border-color: var(--gold);
+            text-shadow:
+                0 0 14px rgba(212,175,55,.3);
+        }
+
+        @media (max-width: 700px) {
+
+            .review-slide {
+                padding: 8px 8px 20px;
+            }
+
+            .review-card {
+                padding: 34px 24px;
+            }
+
+            .review-card::before {
+                left: 15px;
+                font-size: 70px;
+            }
+
+            .review-top {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 9px;
+            }
+
+            .review-text {
+                font-size: 14px;
+                line-height: 1.75;
+            }
+
+            .review-response {
+                padding: 18px;
+            }
+
+            .reviews-intro {
+                margin-bottom: 32px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .reviews-track {
+                transition: none;
+            }
+
+            .review-arrow,
+            .review-dot,
+            .reviews-google-link a {
+                transition: none;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-logo">
+            DJ STARKEY
+        </div>
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="mainNavigation">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#experience">Experience</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#music">Music</a>
+
+            <a href="#reviews">Reviews</a>
+
+            <a href="#booking">Booking</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <img
+                    src="Images/dj-starkey-hero-banner.png"
+                    alt="DJ Starkey Lions Den"
+                    class="hero-banner"
+                >
+
+                <div class="hero-small-title">
+                    WELCOME TO THE
+                </div>
+
+                <h1>
+                    LIONS DEN
+                </h1>
+
+                <h2>
+                    DJ STARKEY
+                </h2>
+
+                <p>
+                    More than music.<br>
+                    An unforgettable experience.
+                </p>
+
+                <a
+                    href="#booking"
+                    class="hero-button"
+                >
+                    BOOK DJ STARKEY
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             ABOUT
+        ========================================== -->
+
+        <section class="about" id="about">
+
+            <div class="section-label">
+                ABOUT DJ STARKEY
+            </div>
+
+            <h2>
+                LIONS DEN
+            </h2>
+
+            <h3>
+                Music for every party.<br>
+                Energy for every moment.
+            </h3>
+
+            <div class="about-text">
+
+                <p>
+                    DJ Starkey is a UK-born mobile DJ based in Tilburg,
+                    bringing professional DJ entertainment, great music
+                    and the right atmosphere to
+                    <strong>
+                        birthdays, weddings, private parties,
+                        corporate events and celebrations.
+                    </strong>
+                </p>
+
+                <p>
+                    With a strong focus on
+                    <strong>EDM, House and Techno</strong>,
+                    DJ Starkey can also take your party through a wide
+                    range of sounds and eras. From
+                    <strong>80s, 90s, 2000s and 2010s classics</strong>
+                    to today's biggest dance and party favourites,
+                    every set is tailored to the event, the guests
+                    and the atmosphere you want to create.
+                </p>
+
+                <p>
+                    Whether you're after an energetic club-style night,
+                    a festival-inspired party, a nostalgic throwback
+                    or a mix of everything that gets people dancing,
+                    the music is shaped around your event.
+                </p>
+
+                <p>
+                    DJ Starkey provides his own
+                    <strong>
+                        professional DJ equipment, sound system
+                        and lighting
+                    </strong>,
+                    creating a complete experience from the first track
+                    to the final beat.
+                </p>
+
+            </div>
+
+
+            <div class="about-highlight">
+
+                <div>
+
+                    <strong>
+                        ENERGY
+                    </strong>
+
+                    <span>
+                        Music and atmosphere for every moment.
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        STYLE
+                    </strong>
+
+                    <span>
+                        A professional DJ experience tailored to your event.
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        EXPERIENCE
+                    </strong>
+
+                    <span>
+                        From intimate parties to unforgettable celebrations.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p class="about-final">
+
+                <strong>
+                    From intimate private parties to big celebrations —
+                    you bring the people, DJ Starkey brings the music.
+                </strong>
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================================
+             EXPERIENCE
+        ========================================== -->
+
+        <section class="experience" id="experience">
+
+            <div class="section-label">
+                EXPERIENCE
+            </div>
+
+            <h2>
+                THE LIONS DEN IN ACTION
+            </h2>
+
+            <p class="experience-intro">
+                Every event is different. Every crowd is different.
+                The goal is always the same — create the right atmosphere,
+                keep the energy high and make every moment count.
+            </p>
+
+
+            <div class="media-title">
+                <span>
+                    LIVE VIDEOS
+                </span>
+            </div>
+
+
+            <div class="video-grid">
+
+
+    <!-- VIDEO 1 -->
+
+    <div class="video-card">
+
+        <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="Images/Videos/VID-20260920-WA0015.jpg"
+        >
+
+            <source
+                src="Images/Videos/VID-20260920-WA0015.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 2 -->
+
+    <div class="video-card">
+
+        <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="Images/Videos/video-2.jpg"
+        >
+
+            <source
+                src="Images/Videos/video-2.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 3 -->
+
+    <div class="video-card">
+
+        <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="Images/Videos/VID-20260920-WA0017.jpg"
+        >
+
+            <source
+                src="Images/Videos/VID-20260920-WA0017.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 4 -->
+
+    <div class="video-card">
+
+        <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="Images/Videos/VID-20260920-WA0018.jpg"
+        >
+
+            <source
+                src="Images/Videos/VID-20260920-WA0018.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 5 -->
+
+    <div class="video-card">
+
+        <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="Images/Videos/36fa2af9-9014-46f0-9d65-2c815b071d35.jpg"
+        >
+
+            <source
+                src="Images/Videos/36fa2af9-9014-46f0-9d65-2c815b071d35.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 6 -->
+
+    <div class="video-card">
+
+        <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="Images/Videos/8a0b94cd6b7b419d8888b3e2acc1d24c.jpg"
+        >
+
+            <source
+                src="Images/Videos/8a0b94cd6b7b419d8888b3e2acc1d24c.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+
+</div>
+
+
+            <div class="media-title">
+
+                <span>
+                    LIVE MOMENTS
+                </span>
+
+            </div>
+
+
+            <div class="gallery">
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="Images/gallery/IMG-20260920-WA0005.jpg"
+                        alt="DJ Starkey live performance"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>
+                            LIVE PERFORMANCE
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="Images/gallery/IMG-20260920-WA0007.jpg"
+                        alt="DJ Starkey event"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>
+                            THE LIONS DEN
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img
+                        src="Images/gallery/IMG-20260920-WA0010.jpg"
+                        alt="DJ Starkey party"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>
+                            UNFORGETTABLE MOMENTS
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Images/equipment/IMG-20260920-WA0008.jpg" alt="DJ Starkey equipment">
+                    <div class="gallery-overlay"><span>PROFESSIONAL SETUP</span></div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Images/equipment/IMG-20260920-WA0004.jpg" alt="DJ Starkey DJ equipment">
+                    <div class="gallery-overlay"><span>DJ SETUP</span></div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Images/gallery/live-moment-6.jpg" alt="DJ Starkey professional DJ setup">
+                    <div class="gallery-overlay"><span>THE LIONS DEN</span></div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             OUR SERVICES
+        ========================================== -->
+
+        <section class="services" id="services">
+
+            <div class="section-label">
+                OUR SERVICES
+            </div>
+
+            <h2>
+                EVENT DJ BOOKING
+            </h2>
+
+            <p class="services-intro">
+                Professional DJ entertainment tailored to your event,
+                your guests and the atmosphere you want to create.
+                From intimate celebrations to high-energy parties,
+                DJ Starkey brings the music, equipment and experience
+                to make your event unforgettable.
+            </p>
+
+
+            <div class="services-grid">
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-ring"></i>
+                    </div>
+
+                    <h3>WEDDINGS</h3>
+
+                    <p>
+                        From the first dance to the final track,
+                        create the perfect atmosphere for your special day.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+
+                    <h3>BIRTHDAYS</h3>
+
+                    <p>
+                        High-energy music and entertainment for birthdays
+                        of all ages and styles.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <h3>CORPORATE EVENTS</h3>
+
+                    <p>
+                        Professional DJ entertainment for company parties,
+                        celebrations and corporate events.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <h3>SCHOOL PARTIES</h3>
+
+                    <p>
+                        A professional setup and music selection designed
+                        to keep the party atmosphere going.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <h3>FESTIVALS</h3>
+
+                    <p>
+                        EDM, House, Techno and festival-style energy
+                        for unforgettable events.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+
+                    <h3>PRIVATE PARTIES</h3>
+
+                    <p>
+                        Your party, your people, your music.
+                        Everything tailored to your event.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="services-details">
+
+
+                <div class="services-detail-card">
+
+                    <span class="services-detail-label">
+                        MUSIC
+                    </span>
+
+                    <h3>
+                        MUSIC FOR EVERY CROWD
+                    </h3>
+
+                    <p>
+                        EDM, House and Techno are at the heart of DJ Starkey.
+                        The music can also include 80s, 90s, 2000s and
+                        2010s classics, current dance tracks and party
+                        favourites.
+                    </p>
+
+                </div>
+
+
+                <div class="services-detail-card">
+
+                    <span class="services-detail-label">
+                        PROFESSIONAL SETUP
+                    </span>
+
+                    <h3>
+                        SOUND & LIGHTING
+                    </h3>
+
+                    <p>
+                        Professional DJ equipment, sound system,
+                        microphone, DJ booth, moving heads, LED effects
+                        and smoke effects are available for your event.
+                    </p>
+
+                </div>
+
+
+                <div class="services-detail-card">
+
+                    <span class="services-detail-label">
+                        LOCATION
+                    </span>
+
+                    <h3>
+                        BASED IN TILBURG
+                    </h3>
+
+                    <p>
+                        DJ Starkey is based in Tilburg, The Netherlands.
+                        The first 10 km of travel is included.
+                        Travel costs may apply outside the first 10 km.
+                    </p>
+
+                </div>
+
+
+                <div class="services-detail-card">
+
+                    <span class="services-detail-label">
+                        BOOKING
+                    </span>
+
+                    <h3>
+                        PERSONAL OFFER
+                    </h3>
+
+                    <p>
+                        Rates are available on request.
+                        Every event is different, so DJ Starkey provides
+                        a personal offer based on your event and requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             MUSIC / SPOTIFY
+        ========================================== -->
+
+        <section class="music" id="music">
+
+            <div class="section-label">
+                MUSIC
+            </div>
+
+            <h2>
+                LISTEN TO DJ STARKEY
+            </h2>
+
+            <p class="music-intro">
+                Discover DJ Starkey on Spotify and SoundCloud and get a feel for the music
+                before your next event.
+            </p>
+
+
+            <div class="spotify-wrap">
+
+                <iframe
+                    style="border-radius:12px"
+                    src="https://open.spotify.com/embed/artist/6fFTaOaoqiuSmyTkx56xK3?utm_source=generator"
+                    width="100%"
+                    height="352"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    title="DJ Starkey on Spotify">
+                </iframe>
+
+            </div>
+
+            <div class="soundcloud-wrap">
+
+    <iframe
+        width="100%"
+        height="352"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/steven-starkey-895455017&color=%23d4af37&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"
+        title="DJ Starkey on SoundCloud">
+    </iframe>
+
+</div>
+
+            <a
+                href="https://open.spotify.com/artist/6fFTaOaoqiuSmyTkx56xK3?si=hIRXG9SsRIiMXk6SFRzZgA"
+                class="spotify-link"
+                target="_blank"
+                rel="noopener"
+            >
+                OPEN DJ STARKEY ON SPOTIFY
+            </a>
+
+            <a
+                href="https://on.soundcloud.com/aPq5rIkCyqrlInI6Id"
+                class="spotify-link"
+                target="_blank"
+                rel="noopener"
+            >
+                OPEN DJ STARKEY ON SOUNDCLOUD
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================================
+             REVIEWS
+        ========================================== -->
+
+        <section class="reviews" id="reviews">
+
+            <div class="reviews-inner">
+
+                <div class="section-label">
+                    WHAT PEOPLE SAY
+                </div>
+
+                <h2>
+                    REAL WORDS FROM THE LIONS DEN
+                </h2>
+
+                <p class="reviews-intro">
+                    A selection of genuine Google reviews from people who
+                    experienced DJ Starkey at their event.
+                </p>
+
+                <div class="reviews-rating">
+
+                    <span class="reviews-stars">
+                        ★★★★★
+                    </span>
+
+                    <span class="reviews-rating-text">
+                        Google Reviews
+                    </span>
+
+                </div>
+
+
+                <div class="reviews-slider">
+
+                    <div
+                        class="reviews-track"
+                        id="reviewsTrack"
+                    >
+
+
+                        <!-- REVIEW 1 -->
+
+                        <article class="review-slide">
+
+                            <div class="review-card">
+
+                                <div class="review-top">
+
+                                    <div class="reviewer-name">
+                                        Linda Civca
+                                    </div>
+
+                                    <div class="review-stars">
+                                        ★★★★★
+                                    </div>
+
+                                </div>
+
+
+                                <p class="review-text">
+
+                                    “Thank you so much for an amazing evening!
+                                    🎶 You did such a great job and really knew
+                                    how to feel the atmosphere and keep the
+                                    energy going.
+
+                                    <br><br>
+
+                                    What I especially loved was that you played
+                                    exactly the style of music I had requested,
+                                    with the perfect vibe of the evening.
+                                    I think that’s one of your biggest
+                                    strengths, you’re very flexible and can
+                                    easily adapt to different music styles and
+                                    requests while still keeping the party
+                                    atmosphere alive.
+
+                                    <br><br>
+
+                                    I was really happy with your performance
+                                    and so glad that you were the DJ at my
+                                    birthday party! 🎉🔥 I would definitely
+                                    recommend you to others — professional,
+                                    talented, flexible, and with a great sense
+                                    of music and the crowd. ❤️”
+
+                                </p>
+
+
+                                <div class="review-google-note">
+                                    Google Review
+                                </div>
+
+
+                                <div class="review-response">
+
+                                    <span class="review-response-label">
+                                        Response from DJ Starkey
+                                    </span>
+
+                                    <p>
+
+                                        “Thank you so much, Linda! ❤️ It was an
+                                        absolute pleasure being your DJ and
+                                        celebrating your birthday with you!
+                                        🎶🔥 I’m really happy that I could
+                                        deliver the style of music and
+                                        atmosphere you were looking for.
+                                        Seeing everyone enjoying themselves and
+                                        dancing made the evening even more
+                                        special. Thank you for your kind words,
+                                        your trust, and for recommending
+                                        DJ Starkey! 🥳🎧❤️”
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- REVIEW 2 -->
+
+                        <article class="review-slide">
+
+                            <div class="review-card">
+
+                                <div class="review-top">
+
+                                    <div class="reviewer-name">
+                                        Klaudia Fraczek
+                                    </div>
+
+                                    <div class="review-stars">
+                                        ★★★★★
+                                    </div>
+
+                                </div>
+
+
+                                <p class="review-text">
+                                    “Cool music! 👍”
+                                </p>
+
+
+                                <div class="review-response">
+
+                                    <span class="review-response-label">
+                                        Response from DJ Starkey
+                                    </span>
+
+                                    <p>
+                                        “Thank you so much, Klaudia! 😊
+                                        I really appreciate the 5-star review
+                                        and I’m glad you enjoyed the music!
+                                        🎶🔥👍”
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- REVIEW 3 -->
+
+                        <article class="review-slide">
+
+                            <div class="review-card">
+
+                                <div class="review-top">
+
+                                    <div class="reviewer-name">
+                                        Nicole Clercx
+                                    </div>
+
+                                    <div class="review-stars">
+                                        ★★★★★
+                                    </div>
+
+                                </div>
+
+
+                                <p class="review-text">
+
+                                    “He is very good, beautiful music, simply
+                                    amazing, turns a party into a smashing
+                                    success 🎉👏 ...”
+
+                                </p>
+
+
+                                <div class="review-google-note">
+                                    Translated by Google
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- REVIEW 4 -->
+
+                        <article class="review-slide">
+
+                            <div class="review-card">
+
+                                <div class="review-top">
+
+                                    <div class="reviewer-name">
+                                        sweet Aina
+                                    </div>
+
+                                    <div class="review-stars">
+                                        ★★★★★
+                                    </div>
+
+                                </div>
+
+
+                                <p class="review-text">
+
+                                    “I thought it was a very good DJ. The songs
+                                    were definitely for the younger generation
+                                    (45 and under) who were present, and less so
+                                    for the older generation (60 plus) who were
+                                    also there and for whom it was a party.
+                                    But still, people were able to enjoy
+                                    themselves.”
+
+                                </p>
+
+
+                                <div class="review-google-note">
+                                    Translated by Google
+                                </div>
+
+
+                                <div class="review-response">
+
+                                    <span class="review-response-label">
+                                        Response from DJ Starkey
+                                    </span>
+
+                                    <p>
+
+                                        “Thank you so much for your 5-star
+                                        review! 😊 It was a pleasure being part
+                                        of your celebration. I’m glad to hear
+                                        that everyone was able to enjoy
+                                        themselves! I did play a wide range of
+                                        music throughout the evening, including
+                                        plenty of older classics, although the
+                                        younger generation did happen to be the
+                                        ones spending the most time on the
+                                        dance floor. My goal is always to read
+                                        the room and play music that keeps
+                                        everyone enjoying the party. Thank you
+                                        again for choosing DJ Starkey! 🥳🎶”
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- REVIEW 5 -->
+
+                        <article class="review-slide">
+
+                            <div class="review-card">
+
+                                <div class="review-top">
+
+                                    <div class="reviewer-name">
+                                        Michelle Starkey
+                                    </div>
+
+                                    <div class="review-stars">
+                                        ★★★★★
+                                    </div>
+
+                                </div>
+
+
+                                <p class="review-text">
+                                    “5-star Google review.”
+                                </p>
+
+
+                                <div class="review-google-note">
+                                    The original review text was not visible
+                                    in the supplied screenshot.
+                                </div>
+
+
+                                <div class="review-response">
+
+                                    <span class="review-response-label">
+                                        Response from DJ Starkey
+                                    </span>
+
+                                    <p>
+
+                                        “Thank you so much for the 5-star
+                                        review, Michelle! ⭐⭐⭐⭐⭐ I really
+                                        appreciate your support and taking the
+                                        time to leave a review. It means a lot
+                                        to me and to DJ Starkey! 🥳🎧❤️”
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- REVIEW 6 -->
+
+                        <article class="review-slide">
+
+                            <div class="review-card">
+
+                                <div class="review-top">
+
+                                    <div class="reviewer-name">
+                                        Elise Van Loon
+                                    </div>
+
+                                    <div class="review-stars">
+                                        ★★★★★
+                                    </div>
+
+                                </div>
+
+
+                                <p class="review-text">
+                                    “5-star Google review.”
+                                </p>
+
+
+                                <div class="review-google-note">
+                                    The original review text was not visible
+                                    in the supplied screenshot.
+                                </div>
+
+
+                                <div class="review-response">
+
+                                    <span class="review-response-label">
+                                        Response from DJ Starkey
+                                    </span>
+
+                                    <p>
+
+                                        “Thank you so much for the 5-star
+                                        review, Elise! ⭐⭐⭐⭐⭐ I really
+                                        appreciate your support and taking the
+                                        time to leave a review. It means a lot
+                                        to me and to DJ Starkey! 🥳🎧❤️”
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- REVIEW 7 -->
+
+                        <article class="review-slide">
+
+                            <div class="review-card">
+
+                                <div class="review-top">
+
+                                    <div class="reviewer-name">
+                                        Wendy De Beer
+                                    </div>
+
+                                    <div class="review-stars">
+                                        ★★★★★
+                                    </div>
+
+                                </div>
+
+
+                                <p class="review-text">
+                                    “5-star Google review.”
+                                </p>
+
+
+                                <div class="review-google-note">
+                                    The original review text was not visible
+                                    in the supplied screenshot.
+                                </div>
+
+
+                                <div class="review-response">
+
+                                    <span class="review-response-label">
+                                        Response from DJ Starkey
+                                    </span>
+
+                                    <p>
+
+                                        “Thank you so much, Wendy, for the
+                                        5-star review! ⭐⭐⭐⭐⭐ It was lovely
+                                        having you there and I’m really happy
+                                        you enjoyed the music and atmosphere.
+                                        Thank you for taking the time to support
+                                        DJ Starkey, it really means a lot!
+                                        🥳🎧❤️”
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- REVIEW CONTROLS -->
+
+                <div class="reviews-controls">
+
+                    <button
+                        type="button"
+                        class="review-arrow"
+                        id="reviewPrev"
+                        aria-label="Previous review"
+                    >
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+
+                    <div
+                        class="review-dots"
+                        id="reviewDots"
+                        aria-label="Review navigation"
+                    ></div>
+
+
+                    <button
+                        type="button"
+                        class="review-arrow"
+                        id="reviewNext"
+                        aria-label="Next review"
+                    >
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- GOOGLE LINK -->
+
+                <div class="reviews-google-link">
+
+                    <a
+                        href="https://maps.app.goo.gl/MWCnQm4oDJACCSzT8?g_st=ic"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        VIEW DJ STARKEY ON GOOGLE
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             BOOKING / OFFER
+        ========================================== -->
+
+        <section class="booking" id="booking">
+
+            <div class="section-label">
+                EVENT DJ BOOKING
+            </div>
+
+            <h2>
+                REQUEST YOUR<br>
+                PERSONAL OFFER
+            </h2>
+
+            <p class="booking-intro">
+                Tell DJ Starkey about your event and receive a personal
+                offer based on your date, location, event type and wishes.
+            </p>
+
+            <p class="booking-note">
+
+                <strong>
+                    Rates are available on request.
+                </strong>
+
+                <br>
+
+                Complete the form below and get in touch directly.
+
+            </p>
+
+            
+<div style="text-align: center; margin: 25px 0;">
+    <a href="/presskit/" target="_blank" rel="noopener noreferrer"
+       style="display: inline-block; padding: 14px 30px; border: 1px solid #d4af37; color: #d4af37; text-decoration: none; font-weight: bold; letter-spacing: 2px; transition: all 0.3s ease;">
+        PRESS KIT
+    </a>
+</div>
+
+
+            <div class="booking-form-wrap">
+
+                <form
+                    class="booking-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                >
+
+                    <!-- WEB3FORMS ACCESS KEY -->
+
+                    <input
+                        type="hidden"
+                        name="access_key"
+                        value="9e96d254-397d-4fd0-b409-9714184ed62a"
+                    >
+
+
+                    <!-- EMAIL SUBJECT -->
+
+                    <input
+                        type="hidden"
+                        name="subject"
+                        value="New DJ Starkey Event Enquiry"
+                    >
+
+
+                    <!-- SPAM PROTECTION -->
+
+                    <input
+                        type="checkbox"
+                        name="botcheck"
+                        style="display:none"
+                        tabindex="-1"
+                        autocomplete="off"
+                    >
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                NAME
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                E-MAIL
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Your e-mail address"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                PHONE
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Your phone number"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="date">
+                                EVENT DATE
+                            </label>
+
+                            <input
+                                type="date"
+                                id="date"
+                                name="event_date"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="event-type">
+                                EVENT TYPE
+                            </label>
+
+                            <select
+                                id="event-type"
+                                name="event_type"
+                                required
+                            >
+
+                                <option value="">
+                                    Select event type
+                                </option>
+
+                                <option value="Wedding">
+                                    Wedding
+                                </option>
+
+                                <option value="Birthday">
+                                    Birthday
+                                </option>
+
+                                <option value="Corporate event">
+                                    Corporate event
+                                </option>
+
+                                <option value="School party">
+                                    School party
+                                </option>
+
+                                <option value="Festival">
+                                    Festival
+                                </option>
+
+                                <option value="Private party">
+                                    Private party
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="guests">
+                                NUMBER OF GUESTS
+                            </label>
+
+                            <input
+                                type="number"
+                                id="guests"
+                                name="number_of_guests"
+                                placeholder="Approximate number"
+                                min="1"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            LOCATION
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Event location"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            MESSAGE
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell me about your event, music preferences, timings and any other details..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="form-submit"
+                    >
+                        REQUEST YOUR OFFER
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CONTACT
+        ========================================== -->
+
+        <section class="contact" id="contact">
+
+            <div class="section-label">
+                CONTACT
+            </div>
+
+            <h2>
+                LET'S CREATE THE EXPERIENCE
+            </h2>
+
+
+            <p>
+
+                <strong>
+                    Email
+                </strong>
+
+                <br>
+
+                djstarkeybookings@hotmail.com
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Phone
+                </strong>
+
+                <br>
+
+                0645299156
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Based in
+                </strong>
+
+                <br>
+
+                Tilburg, The Netherlands
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SOCIAL MEDIA
+        ========================================== -->
+
+        <section class="connect">
+
+            <div class="section-label">
+                CONNECT WITH DJ STARKEY
+            </div>
+
+            <h2>
+                FOLLOW THE MUSIC.<br>
+                JOIN THE LIONS DEN.
+            </h2>
+
+            <p class="connect-intro">
+                Follow DJ Starkey, watch the latest moments
+                and get in touch for your next event.
+            </p>
+
+
+            <div class="social-icons">
+
+
+                <a
+                    href="https://wa.me/31645299156"
+                    class="social-icon"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="WhatsApp"
+                    title="WhatsApp"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/dj_starkey/"
+                    class="social-icon"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram"
+                    title="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+
+                <a
+                    href="https://www.tiktok.com/@dj.starkey"
+                    class="social-icon"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="TikTok"
+                    title="TikTok"
+                >
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+
+                <a
+                    href="https://linktr.ee/djstarkey"
+                    class="social-icon"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Linktree"
+                    title="Linktree"
+                >
+                    <i class="fa-solid fa-link"></i>
+                </a>
+
+
+                <a
+                    href="mailto:djstarkeybookings@hotmail.com"
+                    class="social-icon"
+                    aria-label="Email"
+                    title="Email"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+
+                <a
+                    href="tel:0645299156"
+                    class="social-icon"
+                    aria-label="Phone"
+                    title="Call DJ Starkey"
+                >
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FLOATING WHATSAPP
+    ========================================== -->
+
+    <a
+        href="https://wa.me/31645299156"
+        class="floating-whatsapp"
+        target="_blank"
+        rel="noopener"
+        aria-label="Chat with DJ Starkey on WhatsApp"
+        title="WhatsApp DJ Starkey"
+    >
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            DJ STARKEY
+        </div>
+
+        <p>
+            Welcome to the Lions Den
+        </p>
+
+        <small>
+            © 2026 DJ Starkey. All rights reserved.
+        </small>
+
+        <p class="footer-kvk">
+    KvK: 42064103
+</p>
+    </footer>
+
+
+
+    <!-- WEBSITE JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+    <!-- =========================================================
+         REVIEWS — CAROUSEL JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const track =
+                document.getElementById("reviewsTrack");
+
+            const prevButton =
+                document.getElementById("reviewPrev");
+
+            const nextButton =
+                document.getElementById("reviewNext");
+
+            const dotsContainer =
+                document.getElementById("reviewDots");
+
+
+            if (
+                !track ||
+                !prevButton ||
+                !nextButton ||
+                !dotsContainer
+            ) {
+                return;
+            }
+
+
+            const slides =
+                Array.from(
+                    track.querySelectorAll(".review-slide")
+                );
+
+
+            let currentReview = 0;
+
+
+            slides.forEach((_, index) => {
+
+                const dot =
+                    document.createElement("button");
+
+                dot.type = "button";
+
+                dot.className = "review-dot";
+
+                dot.setAttribute(
+                    "aria-label",
+                    `Show review ${index + 1}`
+                );
+
+
+                dot.addEventListener("click", () => {
+
+                    currentReview = index;
+
+                    updateReviews();
+
+                });
+
+
+                dotsContainer.appendChild(dot);
+
+            });
+
+
+            const dots =
+                Array.from(
+                    dotsContainer.querySelectorAll(
+                        ".review-dot"
+                    )
+                );
+
+
+            function updateReviews() {
+
+                track.style.transform =
+                    `translateX(-${currentReview * 100}%)`;
+
+
+                dots.forEach((dot, index) => {
+
+                    dot.classList.toggle(
+                        "active",
+                        index === currentReview
+                    );
+
+                });
+
+            }
+
+
+            prevButton.addEventListener(
+                "click",
+                () => {
+
+                    currentReview =
+                        (
+                            currentReview -
+                            1 +
+                            slides.length
+                        ) %
+                        slides.length;
+
+                    updateReviews();
+
+                }
+            );
+
+
+            nextButton.addEventListener(
+                "click",
+                () => {
+
+                    currentReview =
+                        (
+                            currentReview +
+                            1
+                        ) %
+                        slides.length;
+
+                    updateReviews();
+
+                }
+            );
+
+
+            let touchStartX = 0;
+
+            let touchEndX = 0;
+
+
+            track.addEventListener(
+                "touchstart",
+                (event) => {
+
+                    touchStartX =
+                        event.changedTouches[0].screenX;
+
+                },
+                {
+                    passive: true
+                }
+            );
+
+
+            track.addEventListener(
+                "touchend",
+                (event) => {
+
+                    touchEndX =
+                        event.changedTouches[0].screenX;
+
+
+                    if (
+                        touchEndX <
+                        touchStartX - 50
+                    ) {
+
+                        nextButton.click();
+
+                    }
+
+
+                    if (
+                        touchEndX >
+                        touchStartX + 50
+                    ) {
+
+                        prevButton.click();
+
+                    }
+
+                },
+                {
+                    passive: true
+                }
+            );
+
+
+            updateReviews();
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
