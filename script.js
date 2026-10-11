@@ -873,22 +873,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", updateReviewHeight);
 
 });
-
-
-document.getElementById("load-soundcloud")?.addEventListener("click", function () {
-    const wrapper = document.querySelector(".soundcloud-wrap");
-
-    if (!wrapper) return;
-
-    const iframe = document.createElement("iframe");
-    iframe.width = "100%";
-    iframe.height = "352";
-    iframe.scrolling = "no";
-    iframe.frameBorder = "no";
-    iframe.allow = "autoplay";
-    iframe.loading = "lazy";
-    iframe.title = "DJ Starkey on SoundCloud";
-    iframe.src = "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/steven-starkey-89";
-
-    wrapper.replaceChildren(iframe);
-});
